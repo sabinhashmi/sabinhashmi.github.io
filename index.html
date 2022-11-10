@@ -48,6 +48,7 @@
         </div>
         <!-- END lines -->
       
+      <!-- NavigationBar - Begin -->
       <nav class="unslate_co--site-nav site-nav-target">
 
         <div class="container">
@@ -55,12 +56,11 @@
           <div class="row align-items-center justify-content-between text-left">
             <div class="col-md-5 text-right">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li class="has-children">
-                  <a href="#home-section" class="nav-link">Home</a>
-                </li>
+                <!-- <li class="has-children"></li><a href="#home-section" class="nav-link">Home</a></li> -->
+                <li><a href="#home-section" class="nav-link">Home</a></li>
                 <li><a href="#about-section" class="nav-link">About</a></li>
                 <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                <li><a href="#intrestsHobbies" class="nav-link">Interests and Hobbies</a></li>
+                <li><a href="#area-of-interests-section" class="nav-link">Area of Interests</a></li>
               </ul>
             </div>
             <div class="site-logo pos-absolute">
@@ -69,8 +69,8 @@
             <div class="col-md-5 text-right text-lg-left">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
                 <li><a href="#skills-section" class="nav-link">Skills</a></li>
-                <li><a href="#testimonial-section" class="nav-link">Testimonial</a></li>
-                <li><a href="#journal-section" class="nav-link">Journal</a></li>
+                <li><a href="#quotes-section" class="nav-link">Quotes</a></li>
+                <li><a href="#blog-section" class="nav-link">Blog Posts</a></li>
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
               </ul>
 
@@ -83,12 +83,12 @@
         </div>
 
       </nav>
-      <!-- END nav -->
-
+      <!-- NavigationBar - End -->
+      
+      <!-- HomePage - Begin -->
       <div class="cover-v1 jarallax" style="background-image: url('images/bg.jpg');" id="home-section">
         <div class="container">
           <div class="row align-items-center">
-              
             <div class="col-md-7 mx-auto text-center">
               <h1 class="heading gsap-reveal-hero">Sabin Hashmi</h1>
               <h2 class="subheading gsap-reveal-hero">PhD Researcher | Data Scientist | Machine Learning | Deep Learning | AI | Physicist | CERN Collaboration Member | Kaggle Expert 2x</h2>
@@ -96,20 +96,21 @@
 
           </div>
         </div>
+      <!-- HomePage - End-->
 
-  
-        <a href="#portfolio-section" class="mouse-wrap smoothscroll">
+        <!-- MouseControl - Begin-->
+        <a href="#about-section" class="mouse-wrap smoothscroll">
           <span class="mouse">
             <span class="scroll"></span>
           </span>
           <span class="mouse-label">Scroll</span>
         </a>
+        <!-- MouseControl - End-->
 
       </div>
-      <!-- END .cover-v1 -->
 
 
-      <!-- aboutMe -->
+      <!-- aboutSection - Begin-->
 
       <div class="unslate_co--section" id="about-section">
         <div class="container">
@@ -131,18 +132,18 @@
             <div class="col-lg-4 pr-lg-5">
               <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Who am I?</span></h3>
               <p class="lead gsap-reveal">Data Researcher works on the applications of Machine Learning and Deep Learning in High Energy Particle Physics. Currently working on Building Machine Learning based Trigger System for LHCb, CERN.</p>
-              <p class="mb-4 gsap-reveal">Data Researcher works on the applications of Machine Learning and Deep Learning in High Energy Particle Physics. Currently working on Building Machine Learning based Trigger System for LHCb, CERN.</p>
-              <p class="gsap-reveal"><a href="#" class="btn btn-outline-pill btn-custom-light">Download my CV</a></p>
+              <!-- <p class="mb-4 gsap-reveal">Data Researcher works on the applications of Machine Learning and Deep Learning in High Energy Particle Physics. Currently working on Building Machine Learning based Trigger System for LHCb, CERN.</p> -->
+              <p class="gsap-reveal"><a href="data/Resume.pdf" class="btn btn-outline-pill btn-custom-light">Download my CV</a></p>
             </div>
           </div>
         </div>
       </div>
+      <!-- aboutSection - End-->
 
-
+      <!-- PortFolio - Beigin-->
 
       <div class="unslate_co--section" id="portfolio-section">
         <div class="container">
-          
           
           <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
           <div id="portfolio-single-holder"></div>
@@ -165,124 +166,56 @@
               </div> -->
             </div>
 
-
-            
             <div id="posts" class="row gutter-isotope-item">
               <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+                <a href="portfolio/portfolio-project-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
                     <div class="overlay">
                       <span class="wrap-icon icon-link2"></span>
                       <div class="portfolio-item-content">
-                        <h3>Shoe Rebranding</h3>
-                        <p>web, branding</p>
+                        <h3>ML based HLT Trigger</h3>
+                        <p>ML, CERN, LHCb</p>
                       </div>
                     </div>
-                    <img src="images/work_1_md.jpg" class="lazyload  img-fluid" alt="Images" />
+                    <img src="portfolio/images/hlt.jpg" class="lazyload  img-fluid" alt="Images" />
                   </a>
               </div>
+
               <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="3">
+                <a href="portfolio/portfolio-project-2.html" class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
                     <div class="overlay">
                       <span class="wrap-icon icon-link2"></span>
                       <div class="portfolio-item-content">
-                        <h3>Reworking</h3>
-                        <p>branding, packaging, illustration</p>
+                        <h3>Image Classification</h3>
+                        <p>DL, Image Processing, Neural Networks</p>
                       </div>
                     </div>
-                    <img src="images/work_2_md.jpg" class="lazyload  img-fluid" alt="Images" />
+                    <img src="portfolio/images/ai.jpg" class="lazyload  img-fluid" alt="Images" />
                   </a>
               </div>
 
               <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-4.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
+                <a href="portfolio/portfolio-project-3.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="3">
                     <div class="overlay">
                       <span class="wrap-icon icon-link2"></span>
                       <div class="portfolio-item-content">
-                        <h3>Modern Building</h3>
-                        <p>branding, packaging</p>
+                        <h3>Customer Profiling</h3>
+                        <p>Customer Segmentation, Finance, Machine Learning </p>
                       </div>
                     </div>
-                    <img src="images/work_3_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-
-                <a href="images/work_4_full.jpg" class="portfolio-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Watch">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Watch</h3>
-                        <p>web, packaging</p>
-                      </div>
-                    </div>
-                    <img src="images/work_4_full.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-
-              </div>
-
-              <div class="item illustration packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="images/work_5_md.jpg" class="portfolio-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Shoe Rebranding">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Shoe Rebranding</h3>
-                        <p>illustration, packaging</p>
-                      </div>
-                    </div>
-                    <img src="images/work_5_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Reshape</h3>
-                        <p>web, branding</p>
-                      </div>
-                    </div>
-                    <img src="images/work_6_md.jpg" class="lazyload  img-fluid" alt="Images" />
+                    <img src="portfolio/images/customerProfile.jpg" class="lazyload  img-fluid" alt="Images" />
                   </a>
               </div>
 
               <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="images/work_7_a_md.jpg" class="portfolio-item item-portrait isotope-item gsap-reveal-img " data-fancybox="gallery" data-caption="Modern Building">
+                <a href="portfolio/portfolio-project-4.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="3">
                     <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
+                      <span class="wrap-icon icon-link2"></span>
                       <div class="portfolio-item-content">
-                        <h3>Modern Building</h3>
-                        <p>branding, packaging</p>
+                        <h3>FEM Thermal Analysis Of Microwave Diathermy</h3>
+                        <p>FEM, Cancer Treatment, Microwave</p>
                       </div>
                     </div>
-                    <img src="images/work_7_a_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="https://www.youtube.com/watch?v=mwtbEGNABWU" class="portfolio-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Showreel 2019">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-play_circle_filled"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Showreel 2019</h3>
-                        <p>web, branding</p>
-                      </div>
-                    </div>
-                    <img src="images/work_8_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="images/work_9_a_md.jpg" class="portfolio-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Render Packaging">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Render Packaging</h3>
-                        <p>web, illustration</p>
-                      </div>
-                    </div>
-                    <img src="images/work_9_a_md.jpg" class="lazyload  img-fluid" alt="Images" />
+                    <img src="portfolio/images/fem.jpg" class="lazyload  img-fluid" alt="Images" />
                   </a>
               </div>
 
@@ -293,6 +226,9 @@
 
         </div>
       </div>
+      <!-- PortFolio - End-->
+
+      
 
 
       <!-- <div class="unslate_co--section">
@@ -316,8 +252,8 @@
 
 
       
-      <!-- Interests and Hobbies -->
-      <div class="unslate_co--section" id="intrestsHobbies">
+      <!-- Area of Interests - Begin-->
+      <div class="unslate_co--section" id="area-of-interests-section">
         <div class="container">
 
           <div class="section-heading-wrap text-center mb-5">
@@ -353,17 +289,16 @@
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
               </div> 
             </div>
-
-            
-
           </div>
         </div>
       </div>
+      <!-- Area of Interests - End-->
 
+      <!-- Skills - Begin-->
       <div class="unslate_co--section section-counter" id="skills-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Skills</span></h2>
             <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
           </div>
 
@@ -372,12 +307,14 @@
             <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
               <div class="counter-v1 text-center">
                 <span class="number-wrap">
-                  <span class="number number-counter" data-number="90">0</span>
+                  <span class="number number-counter" data-number="95">0</span>
                   <span class="append-text">%</span>
                 </span>
                 <span class="counter-label">Python</span>
               </div>
             </div>
+
+            
             <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
               <div class="counter-v1 text-center">
                 <span class="number-wrap">
@@ -396,21 +333,25 @@
                 <span class="counter-label">Deep Learning</span>
               </div>
             </div>
+
+            
             <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
               <div class="counter-v1 text-center">
                 <span class="number-wrap">
-                  <span class="number number-counter" data-number="85">0</span>
+                  <span class="number number-counter" data-number="90">0</span>
                   <span class="append-text">%</span>
                 </span>
-                <span class="counter-label">Tableau</span>
+                <span class="counter-label">PyTorch and Tensorflow</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- END .counter -->
+      <!-- Skills - End-->
+      
 
-      <div class="unslate_co--section" id="testimonial-section">
+      <!-- Quotes - Begin-->
+      <div class="unslate_co--section" id="quotes-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
             <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Quote for the week.</span></h2>
@@ -424,45 +365,63 @@
               <div class="testimonial-inner-bg">
                 <span class="quote">&ldquo;</span>
                 <blockquote>
-                  Life is great!
+                  Life is what happens when you're busy making other plans. 
                 </blockquote>
               </div>
               
               <div class="testimonial-author-info">
-                <img src="images/avatar.png" alt="Image">
-                <h3>Micheal Jackson</h3>
+                <img src="quotes/images/johnLennon.jpeg" alt="Image">
+                <h3>John Lennon</h3>
                 <span class="d-block position">Singer</span>
               </div>
 
             </div>
           </div>
+          
           <div>
             <div class="testimonial-v1">
               <div class="testimonial-inner-bg">
                 <span class="quote">&ldquo;</span>
                 <blockquote>
-                  Let me return to denver.
+                  Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference
                 </blockquote>
               </div>
               
               <div class="testimonial-author-info">
-                <img src="images/avatar.png" alt="Image">
-                <h3>John Denver</h3>
-                <span class="d-block position">Artist</span>
+                <img src="quotes/images/robertFrost.jpeg" alt="Image">
+                <h3>Robert Frost</h3>
+                <span class="d-block position">Poet</span>
               </div>
+            </div>
+          </div>
 
+          <div>
+            <div class="testimonial-v1">
+              <div class="testimonial-inner-bg">
+                <span class="quote">&ldquo;</span>
+                <blockquote>
+                  Knowing yourself is the beginning of all wisdom.
+                </blockquote>
+              </div>
+              
+              <div class="testimonial-author-info">
+                <img src="quotes/images/aristotle.jpeg" alt="Image">
+                <h3>Aristotle</h3>
+                <span class="d-block position">Greek Philosopher</span>
+              </div>
             </div>
           </div>
           
         </div>
 
       </div>
-      <!-- END testimonial -->
+      <!-- Quotes - End-->
 
-      <div class="unslate_co--section" id="journal-section">
+      <!-- Blogposts - Begin -->
+      <div class="unslate_co--section" id="blog-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Journal</span></h2>
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Blog Posts</span></h2>
             <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
           </div>
 
@@ -495,7 +454,7 @@
             </div>
 
 
-            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
+            <!-- <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
 
               <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
                 <div class="overlay">
@@ -508,8 +467,9 @@
               </a>
 
 
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="100">
+            </div> -->
+            
+            <!-- <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="100">
               <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
                 <div class="overlay">
                   <div class="portfolio-item-content">
@@ -519,9 +479,9 @@
                 </div>
                 <img src="images/post_4.jpg" class="lazyload" alt="Image" />
               </a>
-            </div>
+            </div> -->
 
-            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="200">
+            <!-- <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="200">
               <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
                 <div class="overlay">
                   <div class="portfolio-item-content">
@@ -531,16 +491,18 @@
                 </div>
                 <img src="images/post_5.jpg" class="lazyload" alt="Image" />
               </a>
-            </div>
+            </div> -->
 
 
           </div>
 
         </div>
       </div>
-      <!-- END blog posts -->
+      <!-- Blogposts - End -->
+      
 
 
+      <!-- Contact - Begin -->
       <div class="unslate_co--section" id="contact-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
@@ -594,7 +556,7 @@
                 </div> -->
                 <div class="gsap-reveal d-block">
                   <span class="d-block contact-info-label">Address</span>
-                  <address class="contact-info-val">Krakow, <br> 30-065,Poland</address>
+                  <address class="contact-info-val">Kraków,<br> 30-065,Poland</address>
                 </div>
               </div>
             </div>
@@ -602,20 +564,22 @@
           </div>
         </div>
       </div>
-      </div> <!-- END .unslate_co-site-inner -->
-
+      </div> 
+      <!-- Contact - End -->
+      
+      <!-- Footer - Begin -->
       <footer class="unslate_co--footer unslate_co--section">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-7">
               
-              <div class="footer-site-logo"><a href="#">Portfolio<span>.</span></a></div>
+              <div class="footer-site-logo"><a href="#">Sabin <span>Hashmi</span></a></div>
 
               <ul class="footer-site-social">
                 <li><a href="https://www.linkedin.com/in/sabinhashmi">LinkedIn</a></li>
-                <li><a href="https://www.github.com/sabinhashmi">Github</a></li>
                 <li><a href="https://www.twitter.com/sabinhashmi">Twitter</a></li>
-                /a></li>
+                <li><a href="https://www.github.com/sabinhashmi">Github</a></li>
+                
               </ul>
 
               <p class="site-copyright">
@@ -627,13 +591,12 @@
                 </script> All rights reserved | This template is made with <i class="icon-heart"
                   aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              
               </p>
-
             </div>
           </div>
         </div>
       </footer>
+      <!-- Footer - End -->
 
       
     </div>
